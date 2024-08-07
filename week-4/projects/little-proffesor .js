@@ -28,18 +28,10 @@ function littleProffesor() {
   }
 }
 function setRange(level) {
-  switch (level) {
-    case 1:
-      return [1, 10];
-    case 2:
-      return [10, 20];
-    case 3:
-      return [30, 40];
-    case 4:
-      return [40, 50];
-    default:
-      return undefined;
+  if (level > 10) {
+    return undefined;
   }
+  return [1, level * 10];
 }
 function handleMistake(answer, result, firstNum, secondNum) {
   let mistakes = 1;
