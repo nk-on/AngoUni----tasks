@@ -6,3 +6,4 @@ async function fetchCatFacts() {
   }).then(data => console.log(data));
 }
 fetchCatFacts();
+ 
